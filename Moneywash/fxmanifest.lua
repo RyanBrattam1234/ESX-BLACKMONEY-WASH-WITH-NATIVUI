@@ -1,15 +1,19 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'BrattanStudios'
-description 'Blackwash System – Clean your dirty money with an intuitive NativeUI menu and progress bar. Configurable settings including webhooks and wash duration.'
-version '1.0.0'  
+author 'By Ryan'
+description 'Geldwäsche System'
+version '1.0.3'
+
+files {
+    'stream/newbanner.ytd'
+}
 
 shared_script 'config.lua'
 
 client_scripts {
-    '@NativeUI/NativeUI.lua',  -- Stelle sicher, dass NativeUI installiert ist
-    '@ox_lib/init.lua',        -- ox_lib für Progressbar (installiere ox_lib als Resource)
+    '@NativeUI/NativeUI.lua',
+    '@ox_lib/init.lua',
     '@es_extended/locale.lua',
     'client.lua',
 }
