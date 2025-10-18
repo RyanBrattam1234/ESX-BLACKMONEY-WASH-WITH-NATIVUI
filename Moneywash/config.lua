@@ -1,8 +1,15 @@
 Config = {}
 
-Config.LaunderPoint = vector3(918.4657, -3198.8174, -98.2621) -- Die Coords wo Euer Wash stehen soll 
+-- 🧩 Geldwäsche Punkte (du kannst mehrere anlegen)
+Config.LaunderPoints = {
+    vector3(918.4657, -3198.8174, -98.2621),
+    vector3(108.1526, -1980.1936, 20.9626)
+}
+
+-- 🕹️ Maximale Distanz zum Interagieren
 Config.MaxDistance = 1.2
 
+-- 💸 Geldwäsche-Raten
 Config.Rates = {
     {min = 0,     max = 1000,   rate = 0.80},
     {min = 1001,  max = 5000,   rate = 0.70},
@@ -10,17 +17,16 @@ Config.Rates = {
     {min = 10001, max = 999999, rate = 0.50},
 }
 
+-- ⚙️ Weitere Einstellungen
 Config.MinAmount = 50
-Config.StepAmount = 50  -- Nicht verwendet, aber belassen
-Config.Cooldown = 60    -- In Sekunden
+Config.StepAmount = 50
+Config.Cooldown = 60
 
-Config.Webhook = "YOUR DISCORD WEBHOCK"
+Config.Webhook = "https://discord.com/api/webhooks/1231297649877975071/bAf4R2mtcoQDHdP4i7GqdC3rsDuryD-I2gVeJU-XENmvH3TJDdMiqGXWTlrwVvxNZUVf"
 
-Config.BannerColor = {r = 10, g = 120, b = 200, a = 230}  -- Nicht verwendet, aber belassen
+Config.BannerColor = {r = 10, g = 120, b = 200, a = 230}
 
-Config.WashTime = 35    -- In Sekunden
-
-Config.AnimationDict = "amb@prop_human_bbq@male@base"
-Config.AnimationName = "base"
-
+Config.WashTime = 35
+Config.AnimationDict = "mini@repair"
+Config.AnimationName = "fixing_a_player" 
 Config.ProgressLabel = "💦 Geld wird gewaschen..."
